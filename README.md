@@ -1,7 +1,7 @@
 # LeetCode Questions (Data-Structures)
 ## 1. Sliding Window
 ### Q1. Contains Duplicate II
-By Brute Force (will show tme limit exceeded)
+By Brute Force (will show tme limit exceeded) 
 class Solution {
 public:
     bool containsNearbyDuplicate(vector<int>& nums, int k) {
