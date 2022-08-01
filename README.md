@@ -1,6 +1,6 @@
 # LeetCode Questions (Data-Structures)
 ## Arrays
-###Q1.Two Sum
+### Q1.Two Sum
 
             class Solution {
             public:
