@@ -39,6 +39,7 @@
             };
            
 ### Q3. Merge Sorted Arrays
+            //when extra space is not allowed
             
             class Solution {
             public:
