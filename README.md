@@ -178,3 +178,21 @@
 
                 }
             };
+             Remove Duplicates from Sorted Array
+### Q11.  Remove Duplicates from Sorted Array
+            class Solution {
+            public:
+                int removeDuplicates(vector<int>& nums) {
+                    int x=1;
+                    for(int i=1;i<nums.size();i++){
+                        if(nums[i]==nums[i-1])
+                            continue;
+                        else{
+                            nums[x]=nums[i];
+                            x++;
+                        }
+                    }
+                    return x;
+                }
+            };
+
