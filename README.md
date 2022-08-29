@@ -195,4 +195,27 @@
                     return x;
                 }
             };
+         
+### Q12. Merge Intervals
+            class Solution {
+            public:
+                    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+                    vector<vector<int>> a;
+                    if(intervals.size()==0)
+                        return a;
+                    sort(intervals.begin(), intervals.end());
+                    vector<int> temp=intervals[0];
+                    for(auto it:intervals){
+                        if(it[0]<=temp[1]){
+                            temp[1]=max(it[1], temp[1]);
+                        }
+                        else{
+                            a.push_back(temp);
+                            temp=it;
+                        }
+                    }
+                    a.push_back(temp);
+                    return a;
+                    }
+            };
 
