@@ -1,5 +1,5 @@
 # LeetCode Questions (Data-Structures
-            Solved Leetcode question on Data structures and Algorithm
+  Solved Leetcode question on Data structures and Algorithm
 ## Arrays
 ### Q1.Two Sum
 
