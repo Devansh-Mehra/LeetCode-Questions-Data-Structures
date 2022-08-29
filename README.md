@@ -253,3 +253,27 @@
                     return a;
                 }
             };
+      
+### Q14. Product of Array except self
+            class Solution {
+            public:
+                vector<int> productExceptSelf(vector<int>& nums) {
+                    vector<int> a;
+                    if(nums.size()==0)
+                        return a;
+                    int p=1;
+                    for(int i=0;i<nums.size(); i++){
+                        p*=nums[i];
+                        a.push_back(p);
+                    }
+
+                    p=1;
+                    for(int j=nums.size()-1; j>0;j--){
+                        a[j]=a[j-1]*p;
+                        p*=nums[j];
+                    }
+                    a[0]=p;
+                    return a;
+
+                }
+            };
