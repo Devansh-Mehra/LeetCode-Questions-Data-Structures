@@ -344,8 +344,8 @@
                 int total = n*m;
 
                 int left= 0;
-                int top = 0;
                 int right = n-1;
+                int top = 0;
                 int down = m-1;
 
                 while(count<total){
