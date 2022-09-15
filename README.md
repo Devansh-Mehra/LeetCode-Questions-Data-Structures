@@ -452,31 +452,31 @@
       
 ### Q21. 3Sum Closest
       class Solution {
-public:
-    int threeSumClosest(vector<int>& nums, int target) {
-        int min = INT_MAX, a, sum;
-        sort(nums.begin(), nums.end());
-        
-        for(int i=0; i<nums.size()-2; i++){
-            if(i==0 || nums[i]!=nums[i-1]){
-                int l=i+1;
-                int h=nums.size()-1;
-                while(l<h){
-                    sum = nums[i]+nums[l]+nums[h];
-                    if(sum==target)
-                        return sum;
-                    else if(sum<target)
-                        l++;
-                    else
-                        h--;
-                }
-                if(abs(sum-target)<min){
-                    a = sum;
-                    min = abs(sum-target);
-                }
-            }
-        }
-            
-        return a;
-    }
-};
+      public:
+          int threeSumClosest(vector<int>& nums, int target) {
+              int min = INT_MAX, a, sum;
+              sort(nums.begin(), nums.end());
+
+              for(int i=0; i<nums.size()-2; i++){
+                  if(i==0 || nums[i]!=nums[i-1]){
+                      int l=i+1;
+                      int h=nums.size()-1;
+                      while(l<h){
+                          sum = nums[i]+nums[l]+nums[h];
+                          if(sum==target)
+                              return sum;
+                          else if(sum<target)
+                              l++;
+                          else
+                              h--;
+                      }
+                      if(abs(sum-target)<min){
+                          a = sum;
+                          min = abs(sum-target);
+                      }
+                  }
+              }
+
+              return a;
+          }
+      };
