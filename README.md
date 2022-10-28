@@ -3,7 +3,26 @@
 
 ## LeetCode Questions
 ### Q1. Palindrome Number
-            
+            class Solution {
+            public:
+                bool isPalindrome(int x) {
+                    if(x<0 || x>=2147483647 )
+                       return false;
+                    int y=x;
+                    long int n=0;
+                    while(x>0){
+                        n=n*10;
+                        if(n>2147483647)
+                            return false;
+                        n=n+(x%10);
+                        x=x/10;
+                    }
+                    if(n==y)
+                        return true; 
+                    else 
+                        return false;
+                }
+            };
 
  
 ## Arrays
