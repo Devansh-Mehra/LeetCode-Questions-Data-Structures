@@ -1,5 +1,11 @@
 # LeetCode Questions (Data-Structures
   Solved Leetcode question on Data structures and Algorithm
+
+## LeetCode Questions
+### Q1. Palindrome Number
+            
+
+ 
 ## Arrays
 ### Q1.Two Sum
 
