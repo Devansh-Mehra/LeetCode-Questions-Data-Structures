@@ -31,14 +31,11 @@
 
                     for(int i=0;i<s.length();i++){
                         if(m[s[i]]<m[s[i+1]])
-                           sum-=m[s[i]];
+                           sum-=m[s[i]];      // eg. -> IV = 4 = 5-1
                         else
-                           sum+=m[s[i]];
+                           sum+=m[s[i]];     // eg. -> VI = 6 = 5+1
                     }
-
-
                     return sum;
-
                 }
             };
      
