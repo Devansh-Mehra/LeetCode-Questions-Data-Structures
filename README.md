@@ -2,7 +2,20 @@
   Solved Leetcode question on Data structures and Algorithm
 
 ## LeetCode Questions
-### Q1. Palindrome Number
+### Q1. Two Sum
+            class Solution {
+            public:
+                vector<int> twoSum(vector<int>& nums, int target) {
+                    for(int i=0;i<nums.size();i++){
+                        for(int j=i+1;j<nums.size();j++){
+                            if(target- nums[i] == nums[j])
+                            return{i,j};   
+                        }
+                    }
+                    return{-1,-1};
+                } 
+            };
+### Q2. Palindrome Number
             class Solution {
             public:
                 bool isPalindrome(int x) {
@@ -22,7 +35,7 @@
                 }
             };
 
-### Q2. Roman to Integer
+### Q3. Roman to Integer
             class Solution {
             public:
                 int romanToInt(string s) {
@@ -39,7 +52,7 @@
                 }
             };
      
-### Q3. Longest Common Prefix
+### Q4. Longest Common Prefix
             class Solution {
             public:
                 string longestCommonPrefix(vector<string>& strs) {
