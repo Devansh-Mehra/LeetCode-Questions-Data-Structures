@@ -87,8 +87,6 @@
                                 return false;
                             a.pop();
                         }
-
-
                     }
                     return a.empty();
                 }
