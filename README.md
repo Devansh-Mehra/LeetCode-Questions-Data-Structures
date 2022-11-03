@@ -136,6 +136,23 @@
                 }
             };
 
+### Q7. Remove Duplicates from Sorted Array
+            class Solution {
+            public:
+                int removeDuplicates(vector<int>& nums) {
+                    int c=1;
+                    for(int i=1;i<nums.size();i++){
+                        if(nums[i]==nums[i-1])
+                            continue;
+                        else
+                        {
+                            nums[c]=nums[i];
+                            c++;   
+                        }
+                    }
+                    return c;
+                }
+            };
 
 ## Arrays
 ### Q1.Two Sum
