@@ -153,6 +153,8 @@
                     return c;
                 }
             };
+        
+### Q8. Remove Element
 
 ## Arrays
 ### Q1.Two Sum
