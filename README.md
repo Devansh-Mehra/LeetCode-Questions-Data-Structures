@@ -226,7 +226,22 @@
                     return digits;
                 }
             };
-
+            
+### Q12. Climbing stairs
+            class Solution {
+            public:
+                int climbStairs(int n) {
+                    if(n<=2)
+                        return n;
+                    int p=1,p1=2, r=0;
+                    for(int i=3;i<=n;i++){
+                        r=p+p1;
+                        p1=p;
+                        p=r;
+                    }
+                    return r;
+                }
+            };
 ## Arrays
 ### Q1.Two Sum
 
