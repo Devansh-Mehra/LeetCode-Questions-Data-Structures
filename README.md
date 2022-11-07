@@ -233,11 +233,11 @@
                 int climbStairs(int n) {
                     if(n<=2)
                         return n;
-                    int p=1,p1=2, r=0;
+                    int s1=2,s2=1, r=0;
                     for(int i=3;i<=n;i++){
-                        r=p+p1;
-                        p1=p;
-                        p=r;
+                        r=s1+s2;
+                        s2=s1;
+                        s1=r;
                     }
                     return r;
                 }
