@@ -330,7 +330,25 @@
             };
           
 ### Q.18 Valid Palindrome  
-
+            class Solution {
+            public:
+                bool isPalindrome(string s) {
+                    if(s.length() <= 1)
+                        return true;
+                    int l=0, h=s.length()-1;
+                    while(l<h){
+                         while(l<h && !isalnum(s[l])) // isalnum - function to check whether given charater is alphanumeric (i.e either alphabet or numeric) or not
+                            l++;
+                        while(l<h && !isalnum(s[h]))
+                            h--;
+                        if(l<h && tolower(s[l]) != tolower(s[h]))
+                            return false;   
+                        l++;
+                        h--;     
+                    }
+                    return true;
+                }
+            };
 
 ## Arrays
 ### Q1.Two Sum
