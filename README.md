@@ -328,7 +328,10 @@
 
                 }
             };
-            
+          
+### Q.18 Valid Palindrome  
+
+
 ## Arrays
 ### Q1.Two Sum
 
