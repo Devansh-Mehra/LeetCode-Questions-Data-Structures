@@ -375,6 +375,9 @@
               }
 
           };
+          
+### Q20. Majority Element
+          
 
 ## Arrays
 ### Q1.Two Sum
