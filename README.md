@@ -377,7 +377,14 @@
           };
           
 ### Q20. Majority Element
-          
+          class Solution {
+          public:
+              int majorityElement(vector<int>& nums) {
+                  sort(nums.begin(),nums.end());
+                  int n=nums.size();
+                  return nums[n/2];
+              }
+          };
 
 ## Arrays
 ### Q1.Two Sum
