@@ -385,6 +385,30 @@
                   return nums[n/2];
               }
           };
+      
+### Q21. Add Binary
+          class Solution {
+            public:
+                string addBinary(string a, string b) {
+                    string val;
+                    int sum=0,carry=0;
+                    int i=a.length()-1, j=b.length()-1;
+                    while(i>=0 || j>=0){
+                        sum=carry;
+                        if(i>=0)
+                            sum+=a[i]-'0';
+                        if(j>=0)
+                            sum+=b[j]-'0';
+                        val+=to_string(sum%2);
+                        carry = sum/2;
+                        i--,j--;
+                    }
+                    if(carry!=0)
+                        val+='1';
+                    reverse(val.begin(),val.end());
+                    return val;
+                }
+            };
 
 ## Arrays
 ### Q1.Two Sum
