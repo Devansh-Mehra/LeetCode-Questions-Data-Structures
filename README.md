@@ -438,7 +438,7 @@
                 }
             };
             
-## Q23. Excel Sheet Column Number
+### Q23. Excel Sheet Column Number
             class Solution {
             public:
                 int titleToNumber(string columnTitle) {
