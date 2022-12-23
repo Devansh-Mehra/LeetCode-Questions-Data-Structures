@@ -439,6 +439,16 @@
             };
             
 ## Q23. Excel Sheet Column Number
+            class Solution {
+            public:
+                int titleToNumber(string columnTitle) {
+                    int res=0;
+                    for(int i=0; i<columnTitle.size(); i++){
+                        res = res*26 + (columnTitle[i]-'A'+1);
+                    }
+                    return res;
+                }
+            }; 
 
 ## Arrays
 ### Q1.Two Sum
