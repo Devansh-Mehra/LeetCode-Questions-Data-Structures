@@ -464,6 +464,8 @@
                   return res;
                 }
             };
+       
+### Q25. Number Of 1 Bits 
  
 ## Arrays
 ### Q1.Two Sum
