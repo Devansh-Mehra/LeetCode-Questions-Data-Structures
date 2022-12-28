@@ -479,6 +479,8 @@
                     return c;
                 }
             };
+            
+ ### Q26. Happy Number
  
 ## Arrays
 ### Q1.Two Sum
