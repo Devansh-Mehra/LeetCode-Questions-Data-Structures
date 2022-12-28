@@ -503,6 +503,7 @@
                 }
             };
 
+ ### Q27. Remove Linked List Elements
  
 ## Arrays
 ### Q1.Two Sum
