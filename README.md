@@ -482,6 +482,28 @@
             
  ### Q26. Happy Number
  
+            class Solution {
+            public:
+                bool isHappy(int n) {
+                    unordered_set<int> a;
+                    int sum=0;
+                    while(n != 1){
+                        if(a.find(n) == a.end())
+                            a.insert(n);
+                        else
+                            return false;
+                        sum=0;
+                        while(n!=0){
+                            sum+= pow(n%10,2);
+                            n=n/10;
+                        }
+                        n=sum;
+                    }
+                    return true;
+                }
+            };
+
+ 
 ## Arrays
 ### Q1.Two Sum
 
