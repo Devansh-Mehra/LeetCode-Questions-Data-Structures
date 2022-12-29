@@ -523,6 +523,24 @@
                 }
             };
 ### Q28. Reverse Linked List
+            
+            class Solution {
+            public:
+                ListNode* reverseList(ListNode* head) {
+                    ListNode *temp=NULL;
+                    ListNode *prev=head;
+                    ListNode *cur=head;
+                    if(head=nullptr)
+                        return head;
+                    while(cur!=NULL){
+                        cur=cur->next;
+                        prev->next=temp;
+                        temp=prev;
+                        prev=cur;
+                    }
+                    return temp;
+                }
+            };
 
 ## Arrays
 ### Q1.Two Sum
