@@ -547,10 +547,10 @@
             class Solution {
             public:
                 void rotate(vector<int>& nums, int k) {
-                    k%=nums.size();
-                    reverse(nums.begin(), nums.end());
-                    reverse(nums.begin(), nums.begin()+k);
-                    reverse(nums.begin()+k, nums.end());
+                  k%=nums.size();
+                  reverse(nums.begin(), nums.end());  //reverse the array
+                  reverse(nums.begin(), nums.begin()+k); //reverse from start till start+k elements
+                  reverse(nums.begin()+k, nums.end()); // reverse from start+k till end 
                 }
             };
 
