@@ -584,6 +584,28 @@
                 }
             };
 
+### Q32. Remove All Adjacent Duplicates In String
+            class Solution {
+            public:
+                string removeDuplicates(string s) {
+                    stack<char> t;
+                    for(char x:s){
+                        if(!t.empty() && t.top()==x) 
+                            t.pop();
+                        else
+                            t.push(x);
+                    }
+                    s="";
+                    while(!t.empty()){
+                        s=t.top() + s;
+                        t.pop();
+                    }
+                    return s;
+                }
+            };
+
+
+
 ## Arrays
 ### Q1.Two Sum
 
