@@ -616,7 +616,7 @@
                             j++;
                         }
                         chars[ansIndex++]=chars[i];
-                        int count = j-i;    
+                        int count = j-i;    //j will be at another elements position
 
                         if(count > 1){
                             //converting count into single digit & saving in ansIndex 
