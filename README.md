@@ -630,6 +630,54 @@
                     return ansIndex;
                 }
             };
+### Q34. Spiral Matrix
+            class Solution {
+            public:
+                vector<int> spiralOrder(vector<vector<int>>& matrix) {
+
+                    vector<int> ans;
+                    int row = matrix.size();
+                    int col = matrix[0].size();
+
+                    int count=0;
+                    int total_elements = row*col;
+                    int s_row = 0;
+                    int s_col = 0;
+                    int e_row = row-1;
+                    int e_col = col-1;
+
+                    while(count < total_elements){
+                        //printing starting row
+                        for(int i = s_row ; count < total_elements && i <= e_col; i++){
+                            ans.push_back(matrix[s_row][i]);
+                            count++;
+                        }
+                        s_row++;
+
+                        //for printing ending column
+                        for(int i=s_row ; count < total_elements && i <= e_row; i++){
+                            ans.push_back(matrix[i][e_col]);
+                            count++;
+                        }
+                        e_col--;
+
+                        //printing ending row;
+                        for(int i=e_col ; count < total_elements && i>=s_col; i--){
+                            ans.push_back(matrix[e_row][i]);
+                            count++;
+                        }
+                        e_row--;
+
+                        //printing starting col
+                        for(int i=e_row; count < total_elements && i>=s_row; i--){
+                            ans.push_back(matrix[i][s_col]);
+                            count++;
+                        }
+                        s_col++;
+                    }
+                    return ans;
+                }
+            };
 
 ## Arrays
 ### Q1.Two Sum
