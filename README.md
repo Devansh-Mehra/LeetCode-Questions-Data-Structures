@@ -689,7 +689,6 @@
                             swap(matrix[i][j], matrix[j][i]);
                         }
                     }
-
                 }
             };
 
