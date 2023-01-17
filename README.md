@@ -781,7 +781,7 @@
                         if(prime[i]!=0){
                             count++;
 
-                            for(int j=2*i;j<n;j+=i){
+                            for(int j=2*i;j<n;j+=i){  // make multiples of i == 0
                                 prime[j]=0;
                             }
                         }
